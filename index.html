@@ -18,8 +18,8 @@
 <body class="w-full lg:w-[1173px] lg:mx-[134px]">
     <header>
         <!-- Navbar Section  -->
-        <nav>
-            <div class="navbar bg-base-100 flex">
+        <nav class="hidden">
+            <div class="navbar bg-base-100 flex ">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -60,7 +60,7 @@
 
         <!-- Banner Section  -->
         <section class="mt-6 ">
-            <div class="hero bg-gradient-to-b from-black to-black rounded-3xl lg:w-full h-[550px] "
+            <div class="hero bg-gradient-to-b from-black to-black rounded-3xl  lg:w-full lg:h-[550px] "
                 style="background-image: url(./images/banner.png);">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
@@ -74,15 +74,15 @@
 
                         <button class="">
                             <a href="#infoContainer"
-                                class="btn border-none text-white bg-green-600 text-lg lg:text-xl raleway font-bold  ">Buy
+                                class="btn border-none text-white bg-green-600 text-lg lg:text-xl raleway font-bold">Buy
                                 Tickets</a>
                         </button>
 
                     </div>
                 </div>
             </div>
-            <div class="inline-flex flex-col  space-x-6 items-center justify-end relative top-24 right-80 -bottom-96 lg:left-28 lg:-top-20 w-[971px] h-[138px]"
-                >
+            <div
+                class="inline-flex flex-col lg:flex-row   space-x-6 items-center justify-end relative top-24 w-full right-0 bottom-7 lg:left-28 lg:-top-20 lg:w-[971px] h-[138px]">
                 <div class="w-80 h-full">
                     <div
                         class="flex items-center justify-start flex-1 h-full lg:py-8 lg:pl-8 pr-14 bg-white border-b-2 rounded-3xl border-green-600">
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-80 h-full">
+                <div class="lg:w-80 h-full">
                     <div
                         class="flex items-center justify-start flex-1 h-full py-8 pl-8 pr-16 bg-white border-b-2 rounded-3xl border-green-600">
                         <div class="flex space-x-4 items-center justify-end flex-1 h-full">
@@ -125,16 +125,16 @@
 
     </header>
     <main>
-        <!-- Offer Section  -->
-        <section class="hidden">
+                                                                                                                         <!-- Offer Section  -->
+        <section class=" mt-32 lg:mt-9 ">
             <p class="text-4xl font-bold text-center text-black">Best offers for you</p>
-            <div class="mt-5 flex flex-row gap-5">
-                <div class="relative" style="width: 573px; height: 220px;">
+            <div class="mt-5 flex flex-col lg:flex-row gap-5">
+                <div class="relative lg:w-[573px] lg:h-[220px] ">
                     <div class="flex items-center justify-end pl-80 pr-52 bg-yellow-400 rounded-3xl"
                         style="width: 573px; height: 220px;">
                         <div class="inline-flex flex-col space-y-96 items-start justify-start flex-1">
                             <img class="h-[220px]" src="./images/cupon-devider.png" alt="">
-                           
+
                         </div>
                     </div>
 
@@ -145,40 +145,42 @@
 
                     <p class="absolute text-center text-3xl font-bold" style="left: 392px; top: 66px;">NEW15<br /><span
                             class="text-sm text-slate-600">Coupon Code</span>
-                        </p>
-                    
+                    </p>
+
                 </div>
-                <div class="relative " style="width: 573px; height: 220px;">
-                    <div class="flex items-center justify-end pl-80 pr-52 bg-red-300 rounded-3xl"
+                <div class="relative w- lg:w-[573px] lg:h-[220px] ">
+                    <div class="flex items-center justify-end pl-36 rounded-xl w-36 lg:pl-80 lg:pr-52 bg-red-300 lg:rounded-3xl "
                         style="width: 573px; height: 220px;">
                         <div class="inline-flex flex-col space-y-96 items-start justify-start flex-1">
                             <img class="h-[220px]" src="./images/cupon-devider.png" alt="">
                         </div>
                     </div>
-                    <p class="absolute leading-9 text-3xl font-bold" style="left: 51px; top: 52px;">20% OFF<br /><span
-                            class="text-xl">on your next
-                            purchase</span><br /><span class="text-slate-600">use
-                            by January 2024</span></p>
-                    <p class="absolute text-center text-2xl font-extrabold" style="left: 392px; top: 66px;">Coupon
-                        Code<br /><span class="text-slate-600">Coupon Code</span>
-                    </p>
-                    
+                    <div class="">
+                        <p class="absolute leading-9 lg:text-3xl lg:font-bold left-[20px] top-[51px]  lg:left-[51px] lg:top-[52px] " >20% OFF <br/> <span class="lg:text-xl">on your next
+                                purchase</span><br /><span class="text-slate-600">use
+                                by January 2024</span></p>
+                        <p class="absolute left-56 top-[66px] lg:left-[392px] lg:top-[66px] text-center lg:text-2xl lg:font-extrabold">
+                            Coupon
+                            Code<br /><span class="text-slate-600">Coupon Code</span>
+                        </p>
+                    </div>
+
                 </div>
 
             </div>
 
             <button
-                class=" btn text-center items-center justify-center px-8  border rounded-xl border-green-600 ml-[510px] mt-10 shadow-xl text-xl font-bold text-center text-green-600 ">See
+                class=" btn text-center items-center justify-center px-8  border rounded-xl border-green-600 ml-24 lg:ml-[510px] mt-10 shadow-xl text-xl font-bold text-center text-green-600 ">See
                 All Offers
             </button>
 
 
         </section>
 
-        
-        <!-- Bus Seat info section -->
-        <section id="infoContainer"
-            class="hidden bg-[#F7F8F8] lg:px-16 lg:py-16 px-3 py-6 border-t-2 overflow-hidden border-green rounded-t-3xl mt-8">
+
+                                                                                                                         <!-- Bus Seat info section -->
+        class=" bg-[#F7F8F8] lg:px-16 lg:py-16 px-3 py-6 border-t-2 overflow-hidden border-green rounded-t-3xl mt-8">  <!--id="infoContainer"-->
+        <section id="infoContainer"                                                                                         
             <div class="text-center space-y-3 mb-10">
                 <h1 class="raleway text-2xl lg:text-4xl font-semibold lg:font-bold">
                     Akash Paribahan
@@ -244,7 +246,7 @@
                     </p>
                 </div>
             </div>
-            <!-- select seat section -->
+                                                                                                                        <!-- select seat section -->
             <div class="bg-white-color rounded-2xl p-5 mt-6">
                 <div class="flex flex-col lg:flex-row">
                     <div class="lg:w-[65%] w-full border-r-2 border-dashed pr-10">
@@ -265,11 +267,11 @@
                         </div>
                         <div class="flex justify-end my-4">
                             <div class="bg-[#0307121A] lg:w-24 px-5 py-2 rounded-lg">
-                                <img src="images/wheel.png" alt="wheel" class="mx-auto" />
+                                <img src="./images/wheel.png" alt="wheel" class="mx-auto" />
                             </div>
                         </div>
 
-                        <!-- seat number -->
+                                                                                                                        <!-- seat number -->
                         <div class="inter text-lg font-medium text-[#03071280] space-y-4">
                             <div class="flex justify-center items-center">
                                 <div class="w-10">A</div>
@@ -444,23 +446,25 @@
                         </div>
                     </div>
 
-                    <!-- select seat section -->
+                                                                                                                        <!-- select seat section -->
                     <div class="lg:w-[35%] w-full pl-10">
                         <h3 class="raleway text-2xl font-semibold text-black-color border-b border-dashed pb-3">
                             Select Your Seat
                         </h3>
                         <div class="bg-[#F7F8F8] p-5 rounded-lg mt-4">
-                            <div class="flex justify-between inter text-lg font-medium text-black-color border-b border-dashed pb-3">
-                                <p> Seat<span id="ticketCount" class="text-sm bg-green text-white-color rounded-lg px-2">
-                                    0</span>
+                            <div
+                                class="flex justify-between inter text-lg font-medium text-black-color border-b border-dashed pb-3">
+                                <p> Seat<span id="ticketCount"
+                                        class="text-sm bg-green text-white-color rounded-lg px-2">
+                                        0</span>
                                 </p>
                                 <p>Class</p>
                                 <p>Price</p>
                             </div>
-                            <div id="seatInfo" class="flex justify-between pt-3">
-                                <div id="seatName"></div>
-                                <div id="seatClass"></div>
-                                <div id="seatPrice"></div>
+                            <div id="seatInfo" class="flex justify-between pt-3">                                       <!-- id="seatInfo" -->
+                                <div id="seatName "></div>                                                              <!-- id="seatName "-->
+                                <div id="seatClass"></div>                                                              <!--  id="seatClass"-->
+                                <div id="seatPrice"></div>                                                              <!-- id="seatPrice"-->
                             </div>
                             <hr class="my-3" />
                             <div class="flex justify-between inter text-lg font-medium text-black-color mb-3">
@@ -468,12 +472,12 @@
                                 <p>BDT <span id="totalPrice">0</span></p>
                             </div>
                             <div id="discount-box"
-                                class="flex justify-between inter text-lg font-medium text-black-color mb-3"></div>
-                            <div id="coupon-box" class="bg-white-color p-2 rounded-lg">
+                                class="flex justify-between inter text-lg font-medium text-black-color mb-3"></div> <!-- id="discount-box"-->
+                            <div id="coupon-box" class="bg-white-color p-2 rounded-lg">                                 <!--id="coupon-box"-->
                                 <div class="flex gap-1 justify-center items-center">
-                                    <input type="text" name="" id="coupon-code" placeholder="Have any coupon?"
-                                        autocomplete="off" class="w-full" />
-                                    <button id="btn-apply" disabled class="btn bg-green px-5 rounded-lg text-white">
+                                    <input type="text" name="" id="coupon-code" placeholder="Have any coupon?"         
+                                        autocomplete="off" class="w-full" />                                             <!-- id="coupon-code"-->
+                                    <button id="btn-apply" disabled class="btn bg-green px-5 rounded-lg text-white">  <!-- id="btn-apply"-->
                                         Apply
                                     </button>
                                 </div>
@@ -483,17 +487,19 @@
                                 <p>BDT <span id="grandTotal">0</span></p>
                             </div>
                         </div>
+
+                                                                                                                        <!-- Form section  -->
                         <div class="space-y-3 mt-6">
                             <div class="space-y-3">
                                 <label for="name" class="inter text-lg font-semibold text-black-color">Passenger
                                     Name*</label>
                                 <br />
                                 <input type="text" name="" id="name" placeholder="Enter your name" autocomplete="off"
-                                    class="border w-full py-2 px-3 rounded-lg" />
+                                    class="border w-full py-2 px-3 rounded-lg" />                                       <!--id="name"-->
                             </div>
                             <div class="space-y-3">
                                 <label for="phone" class="inter text-lg font-semibold text-black-color">Phone
-                                    Number*</label>
+                                    Number*</label>                                                                     <!--id="phone"-->
                                 <br />
                                 <input type="tel" name="" id="phone" placeholder="Enter your phone number"
                                     autocomplete="off" class="border w-full py-2 px-3 rounded-lg" />
@@ -503,9 +509,9 @@
                                     Id*</label>
                                 <br />
                                 <input type="email" name="" id="email" placeholder="Enter your email id"
-                                    autocomplete="off" class="border w-full py-2 px-3 rounded-lg" />
+                                    autocomplete="off" class="border w-full py-2 px-3 rounded-lg" />                    <!--id="email"-->
                             </div>
-                            <button id="next-btn" class="btn w-full bg-green px-5 py-1 rounded-lg text-white">
+                            <button id="next-btn" class="btn w-full bg-green px-5 py-1 rounded-lg text-gray-400">      <!--id="next-btn"-->
                                 Next
                             </button>
                             <div class="flex justify-evenly inter text-sm font-medium text-[#03071299]">
